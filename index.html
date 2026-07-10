@@ -79,9 +79,9 @@
 
         /* card */
         .card {
-            max-width: 650px;
+            max-width: 600px;
             width: 100%;
-            padding: 30px 20px;
+            padding: 40px 30px;
             border-radius: 30px;
             background: rgba(255, 255, 255, .12);
             backdrop-filter: blur(15px);
@@ -105,7 +105,7 @@
 
         h2 {
             font-size: 28px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #fff;
         }
 
@@ -117,8 +117,8 @@
 
         /* buttons */
         button {
-            margin-top: 25px;
-            padding: 13px 40px;
+            margin-top: 30px;
+            padding: 15px 40px;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -141,27 +141,18 @@
         /* photos */
         .photos {
             display: flex;
-            gap: 12px;
+            gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 15px;
-            max-height: 380px;
-            overflow-y: auto; /* মোবাইলে ৪টি ছবি যেন স্ক্রোল করে দেখা যায় */
-            padding: 5px;
-        }
-
-        /* স্ক্রোলবার হাইড করার জন্য */
-        .photos::-webkit-scrollbar {
-            width: 0px;
-            background: transparent;
         }
 
         .photos img {
-            width: 130px;
-            height: 180px;
+            width: 180px;
+            height: 240px;
             object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(255, 125, 221, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 0 25px #ff7ddd;
             transition: 0.3s ease;
         }
 
@@ -211,11 +202,8 @@
     <div class="card">
         <h2>📸 Memories</h2>
         <div class="photos">
-            <!-- আপনার দেওয়া ৪টি ছবির ডিরেক্ট লিংক এখানে সেট করা হয়েছে -->
-            <img src="https://i.ibb.co.com/w9wy5qj/1000041258.jpg" alt="Memory 1">
-            <img src="https://i.ibb.co.com/gcFJ6P0/1000041093.jpg" alt="Memory 2">
-            <img src="https://i.ibb.co.com/m5rFLPmD/1000041261.jpg" alt="Memory 3">
-            <img src="https://i.ibb.co.com/N64G3Pmm/1000041260.jpg" alt="Memory 4">
+            <!-- আগের ছবিগুলো বাদ দিয়ে নতুন ডিরেক্ট ইমেজ লিংক বসানো হয়েছে -->
+            <img src="https://i.ibb.co.com/nNP4mvPr/1000041262.jpg" alt="Memory">
         </div>
         <button onclick="next()">Next 💫</button>
     </div>
@@ -291,4 +279,4 @@
 </script>
 
 </body>
-    </html>
+</html>
