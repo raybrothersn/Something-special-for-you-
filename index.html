@@ -79,9 +79,9 @@
 
         /* card */
         .card {
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
-            padding: 40px 30px;
+            padding: 30px 20px;
             border-radius: 30px;
             background: rgba(255, 255, 255, .12);
             backdrop-filter: blur(15px);
@@ -105,7 +105,7 @@
 
         h2 {
             font-size: 28px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #fff;
         }
 
@@ -117,8 +117,8 @@
 
         /* buttons */
         button {
-            margin-top: 30px;
-            padding: 15px 40px;
+            margin-top: 25px;
+            padding: 13px 40px;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -141,18 +141,30 @@
         /* photos */
         .photos {
             display: flex;
-            gap: 20px;
+            gap: 12px;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 15px;
+            max-height: 380px;
+            overflow-y: auto; /* ছবি বেশি হওয়ায় স্ক্রোল করার সুবিধা দেওয়া হয়েছে */
+            padding: 10px 5px;
+        }
+
+        /* স্ক্রোলবার সুন্দর করার জন্য */
+        .photos::-webkit-scrollbar {
+            width: 5px;
+        }
+        .photos::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
         }
 
         .photos img {
-            width: 200px;
-            height: 260px;
+            width: 135px;
+            height: 180px;
             object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 0 25px #ff7ddd;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 125, 221, 0.7);
             transition: 0.3s ease;
         }
 
@@ -202,8 +214,14 @@
     <div class="card">
         <h2>📸 Memories</h2>
         <div class="photos">
-            <!-- শুধু আপনার দেওয়া নির্দিষ্ট ছবিটি এখানে সেট করা আছে -->
-            <img src="https://i.ibb.co.com/nNP4mvPr/1000041262.jpg" alt="Memory Image">
+            <!-- আপনার দেওয়া ৭টি ছবির সঠিক ডিরেক্ট লিংক এখানে সাজানো হয়েছে -->
+            <img src="https://i.ibb.co.com/nNP4mvPr/1000041262.jpg" alt="Memory 1">
+            <img src="https://i.ibb.co.com/Zp85gMbN/1000041263.jpg" alt="Memory 2">
+            <img src="https://i.ibb.co.com/MyYYQbM3/1000041265.jpg" alt="Memory 3">
+            <img src="https://i.ibb.co.com/v44MTwJ1/1000041264.jpg" alt="Memory 4">
+            <img src="https://i.ibb.co.com/WvMWh7cy/1000041266.jpg" alt="Memory 5">
+            <img src="https://i.ibb.co.com/ZzDXTR7Q/1000041268.jpg" alt="Memory 6">
+            <img src="https://i.ibb.co.com/5QbPygT/1000041267.jpg" alt="Memory 7">
         </div>
         <button onclick="next()">Next 💫</button>
     </div>
